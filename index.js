@@ -5,11 +5,13 @@ const action = () => {
     index: 2
   }
 }
-
+const func = (number) => {
+  return number
+}
 
 const newArray =  [
-  ...array.slice(0,3), 
-  ...array.slice(3 + 1)
+  ...array.slice(0, func(3)),
+  ...array.slice(func(3) + 1)
         ]
 
 console.log('old array' + array)

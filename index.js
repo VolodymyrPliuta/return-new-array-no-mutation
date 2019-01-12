@@ -6,8 +6,10 @@ const action = () => {
   }
 }
 
+
 const newArray =  [
-        ...array.slice(2,3)
+  ...array.slice(0,3), 
+  ...array.slice(3 + 1)
         ]
 
 console.log('old array' + array)
